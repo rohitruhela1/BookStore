@@ -10,7 +10,7 @@ import userroute from "./route/user.route.js";
 dotenv.config();
 
 app.use(cors({
-    origin:"https://bookstore-nsjq.onrender.com",
+    origin:"*",
     credentials: true,
     secure: true  // change to true when deploying to production
 }));
