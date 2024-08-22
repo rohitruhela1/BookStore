@@ -30,6 +30,10 @@ try {
 app.use("/book",bookRoute);
 app.use("/user",userroute);
 
+app.get('/test', (req, res)=>{
+    res.json('Up and Running')
+})
+
 app.listen(PORT, () => {
   console.log(`server is listening on port ${PORT}`)
 })
