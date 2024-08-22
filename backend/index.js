@@ -12,7 +12,7 @@ dotenv.config();
 app.use(cors({
     origin:"https://bookstore-nsjq.onrender.com",
     credentials: true,
-    secure: false  // change to true when deploying to production
+    secure: true  // change to true when deploying to production
 }));
 app.use(express.json());
 
