@@ -9,7 +9,11 @@ import userroute from "./route/user.route.js";
 
 dotenv.config();
 
-app.use(cors());
+app.use(cors({
+    origin:"https://bookstore-nsjq.onrender.com",
+    credentials: true,
+    secure: false  // change to true when deploying to production
+}));
 app.use(express.json());
 
 const PORT =process.env.PORT || 4000;
